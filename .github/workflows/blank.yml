@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       target:
-      description: "Where to deploy"
-      type: choice
-      options: [staging, production]
+        description: "Where to deploy"
+        type: choice
+        options: [staging, production]
 jobs:
   deploy:
     runs-on: ubuntu-latest
